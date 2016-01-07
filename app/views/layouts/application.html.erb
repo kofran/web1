@@ -7,7 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <ul id="menu_sup">
+    <li><%= link_to 'Home', controller: 'home' %></li>
+    <li><%= link_to 'History', controller: 'history' %></li>
+    <li><%= link_to 'Contact', controller: 'contact' %></li>
+  </ul>
 <%= yield %>
 
 </body>
